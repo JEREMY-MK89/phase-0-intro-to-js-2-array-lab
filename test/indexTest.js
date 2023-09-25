@@ -5,12 +5,11 @@ describe('index.js', function () {
     });
   });
 
-  describe('Array functions', function () {
-    beforeEach(function () {
-      cats.length = 0;
-
-      cats.push('Milo', 'Otis', 'Garfield');
-    });
+  beforeEach(function () {
+    cats.length = 0;
+  
+    cats.push("Milo", "Otis", "Garfield");
+  });
 
     describe('destructivelyAppendCat(name)', function () {
       it('appends a cat to the end of the cats array', function () {
